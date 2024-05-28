@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load calc_discount %}
+{% block content %}
+
+
+
+<div class="container my-3 text-center">
+    <div class="row mx-auto border border-primary">
+        <div class="col border border-primary ps-5">
+            <div class="card" style="width: 18rem;">
+                <img src="{{course.course_image.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">{{course.desc}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col border border-primary">
+            <h1>{{course.course_name}}</h1>
+            <div class="alert alert-primary" role="alert">
+               
+                {% if coup %}
+                   
+                  You Pay:-Rs.<h2>{% price_after_discount course.price coup.discount %}</h2>
+                  <a class="btn btn-success border" href="?action=payment&coupon={{coup.code}}">Continue to Payment</a>
+                  
+                  {% else %}
+                    You Pay:-Rs.<h2>{% price_after_discount course.price course.discount %}</h2>
+                    <a class="btn btn-success border" href="?action=payment">Continue to Payment</a> 
+                  {% endif %}
+            </div>
+           
+            <form class="row g-3">
+                <h2>Coupon Code:</h2>
+                    {% if coupon_msg %}
+                    <div class="alert alert-danger" role="alert">
+                                {{coupon_msg}}!
+                    </div>
+                    {% elif coup %}
+                    <div class="alert alert-success" role="alert">
+                             You got {{coup.discount}}% discount
+                    </div>
+                    {% endif %}
+                    <div class="col-md-6"> 
+                        <input type="text" class="form-control" id="" name="coupon" placeholder="enter your coupan..">
+                    </div>
+
+               <div class="col-md-6">
+                        <input type="submit" class="btn btn-primary" value="Apply Coupon" >
+               </div>
+                </form>
+            <br>
+            <br>
+            {% comment %} <a href = "?action=payment" class="btn btn-primary mb-3" id="rzp-button1">Buy Now</a> {% endcomment %}
+
+
+        </div>
+    </div>
+
+</div>
+
+{% if order is not None %}
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+
+var options = {
+    "key": "rzp_test_kWPIdUQkoNjn4P", // Enter the Key ID generated from the Dashboard
+    "name": "Aptron Tech",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    'amount':"{{amount}}",
+    "order_id": "{{order_id}}", 
+    "callback_url": "http://localhost:8000/verify_payment",
+    
+    "prefill": {    
+        "name": "{{user.first_name}}",
+        "email": "{{user.email}}",
+       
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+
+
+    rzp1.open();
+
+
+</script>
+{% endif %}
+{% comment %} {% endif %} {% endcomment %}
+
+{% if error is not None %}
+<script>
+    alert('{{error}}')
+</script>
+{% endif %}
+{% endblock content %} 

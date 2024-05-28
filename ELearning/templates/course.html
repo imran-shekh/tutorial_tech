@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Course
+{% endblock title %}
+
+{% load calc_discount %}
+{% block content %}
+<style>
+    .curse{
+        cursor:not-allowed;
+    }
+</style>
+<div class="container my-3">
+    <div class="row">
+        {% comment %} {% for vid in video_fetch.Videos_set.all  %} {% endcomment %}
+        <div class="col-2 my-3">
+            <ul class="list-group">
+            {% is_enroll request video_fetch  as enrolled %}
+            {% for video_title in video_fetch.videos_set.all %}
+            <li class="list-group-item {% if video_title == video %}active-video{% endif %}" aria-current="true">
+                        
+                    <a {% if not enrolled and not video_title.is_preview %}href="../../checkout/{{video_fetch.slug}}"{% else %}href="?serial_no={{video_title.video_seq}}" {% endif %}class="{% if video_title == video %} active-video-link {% endif %}{% if not enrolled and not video_title.is_preview %}text-muted curse {% endif %} ">{{video_title}}</a>
+                       
+            </li>
+            {% endfor %}
+          
+            </ul>
+        </div>
+ {% comment %} {% for vid in video %} {% endcomment %}
+        <div class="col-10">
+
+            <iframe width="100%" height="495" src="https://www.youtube.com/embed/{{video.video_id}}" title="#Lec - 18 || Introduction to sql part 1 || Basic syntax of SQL || SQL queries" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        </div>
+        
+        {% comment %} {% endfor %} {% endcomment %}
+    </div>
+    <div class="container my-3">
+        <div class="row">
+            <h1>Tags</h1>
+            <hr>
+           {% for tag in  video_fetch.tag_set.all %}
+            <div class="col-12">
+                {{tag.desc}}
+            </div>
+           {% endfor %}
+        </div>
+         <div class="row">
+            <h1>Learning</h1>
+            <hr>
+           {% for tag in  video_fetch.learning_set.all %}
+            <div class="col-12">
+                {{tag.desc}}
+            </div>
+           {% endfor %}
+        </div>
+         <div class="row">
+            <h1>Pre Req.</h1>
+            <hr>
+           {% for tag in  video_fetch.prereq_set.all %}
+            <div class="col-12">
+                {{tag.desc}}
+            </div>
+           {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

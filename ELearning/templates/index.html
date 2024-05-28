@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load calc_discount %}
+ {% block title %} E-Learning {% endblock title %} 
+ 
+ {% block content %}
+
+<div class="container my-3">
+    <div class="row text-center">
+        {% for crs_dtls in course_dtls %}
+        <div class="col-4 text-center my-3">
+            <div class="card" style="width: 18rem;">
+                <img src="{{crs_dtls.course_image.url}}" class="card-img-top" alt="{{crs_dtls.course_image.url}}" height=150>
+                <div class="card-body">
+                    <h3 class="card-title">{{crs_dtls.course_name}}</h3>
+                    <p class="card-text">{{crs_dtls.desc}}</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Course Price:- <strike><strong>Rs.{{crs_dtls.price}}</strong></strike></li>
+                    <li class="list-group-item">You Pay:-Rs.{% price_after_discount crs_dtls.price crs_dtls.discount %}</li>
+                    <li class="list-group-item">Discount:- {{crs_dtls.discount}}%</li>
+                </ul>
+                <div class="card-body text-center">
+                    {% is_enroll request crs_dtls as enrolled %} 
+                    {% if enrolled %}
+                    <a href="course/{{crs_dtls.slug}}" 
+                    {% if  not request.session.name %} data-bs-toggle="modal" data-bs-target="#login"{% endif %} 
+                    class="card-link btn btn-primary">Enrolled</a>
+
+                    {% else %}
+                    <a href="checkout/{{crs_dtls.slug}}/" 
+                    {% if  not request.session.name %} data-bs-toggle="modal" data-bs-target="#login"{% endif %} 
+                    class="card-link btn btn-primary">Enroll</a>
+                    <a href="course/{{crs_dtls.slug}}/" class="card-link btn btn-primary">More</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock content %}

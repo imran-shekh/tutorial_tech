@@ -1,0 +1,8 @@
+create database database_name
+use database_name
+create table tbl_name(col1 datatype constraint,col2 datatype constraint,...)
+insert into tbl_name(col1,col2,...)values(val1,val2,...)
+select * from tbl_name
+select * from tbl_name where condition
+select col1,col2,.. from tbl_name
+select col1,col2,.. from tbl_name where condition

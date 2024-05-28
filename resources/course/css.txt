@@ -1,0 +1,867 @@
+body {
+  margin: 0;
+  padding: 0;
+ }
+ 
+ #background 
+{ 
+     left: 0px; 
+     top: 0px; 
+     position: relative; 
+     margin-left: auto; 
+     margin-right: auto; 
+     width: 1000px;
+     height: 4532px; 
+     overflow: hidden;
+     z-index:0;
+    } 
+
+ #Background 
+{ 
+     left: 0px; 
+     top: 0px; 
+     position: absolute; 
+     width: 1000px;
+     height: 4532px;
+     z-index:1;
+} 
+
+ #ColorFill1 
+{ 
+     left: 0px; 
+     top: 0px; 
+     position: absolute; 
+     width: 1000px;
+     height: 4532px;
+     z-index:2;
+} 
+
+ #Layer1 
+{ 
+     left: 10px; 
+     top: 41px; 
+     position: absolute; 
+     width: 210px;
+     height: 61px;
+     z-index:3;
+} 
+
+ #Rectangle17 
+{ 
+     left: -74px; 
+     top: -56px; 
+     position: absolute; 
+     width: 1109px;
+     height: 176px;
+     z-index:4;
+} 
+
+ #SERVICES 
+{ 
+     left: 249px; 
+     top: 87px; 
+     position: absolute; 
+     width: 97px;
+     height: 11px;
+     z-index:5;
+} 
+
+ #v 
+{ 
+     left: 353px; 
+     top: 90px; 
+     position: absolute; 
+     width: 16px;
+     height: 9px;
+     z-index:6;
+} 
+
+ #Rectangle16 
+{ 
+     left: 0px; 
+     top: 677px; 
+     position: absolute; 
+     width: 272px;
+     height: 51px;
+     z-index:7;
+} 
+
+ #Rectangle16copy 
+{ 
+     left: 278px; 
+     top: 677px; 
+     position: absolute; 
+     width: 203px;
+     height: 51px;
+     z-index:8;
+} 
+
+ #Rectangle16copy2 
+{ 
+     left: 487px; 
+     top: 677px; 
+     position: absolute; 
+     width: 215px;
+     height: 51px;
+     z-index:9;
+} 
+
+ #Rectangle16copy3 
+{ 
+     left: 706px; 
+     top: 677px; 
+     position: absolute; 
+     width: 292px;
+     height: 51px;
+     z-index:10;
+} 
+
+ #TurnitinReport100Pla 
+{ 
+     left: 5px; 
+     top: 690px; 
+     position: absolute; 
+     width: 986px;
+     height: 24px;
+     z-index:11;
+} 
+
+ #Layer4 
+{ 
+     left: 345px; 
+     top: 594px; 
+     position: absolute; 
+     width: 304px;
+     height: 111px;
+     z-index:12;
+} 
+
+ #Layer5 
+{ 
+     left: 447px; 
+     top: 604px; 
+     position: absolute; 
+     width: 524px;
+     height: 47px;
+     z-index:13;
+} 
+
+ #Layer2 
+{ 
+     left: 471px; 
+     top: 166px; 
+     position: absolute; 
+     width: 505px;
+     height: 431px;
+     z-index:14;
+} 
+
+ #Rectangle15 
+{ 
+     left: 634px; 
+     top: 465px; 
+     position: absolute; 
+     width: 205px;
+     height: 52px;
+     z-index:15;
+} 
+
+ #FREEASSISTANCE 
+{ 
+     left: 648px; 
+     top: 485px; 
+     position: absolute; 
+     width: 178px;
+     height: 14px;
+     z-index:16;
+} 
+
+ #Rectangle15copy4 
+{ 
+     left: 566px; 
+     top: 224px; 
+     position: absolute; 
+     width: 139px;
+     height: 30px;
+     z-index:17;
+} 
+
+ #Rectangle15copy4_0 
+{ 
+     left: 566px; 
+     top: 270px; 
+     position: absolute; 
+     width: 139px;
+     height: 30px;
+     z-index:18;
+} 
+
+ #Rectangle15copy4_1 
+{ 
+     left: 566px; 
+     top: 373px; 
+     position: absolute; 
+     width: 139px;
+     height: 30px;
+     z-index:19;
+} 
+
+ #Rectangle15copy4_2 
+{ 
+     left: 566px; 
+     top: 421px; 
+     position: absolute; 
+     width: 315px;
+     height: 30px;
+     z-index:20;
+} 
+
+ #Rectangle15copy6 
+{ 
+     left: 566px; 
+     top: 321px; 
+     position: absolute; 
+     width: 315px;
+     height: 31px;
+     z-index:21;
+} 
+
+ #Rectangle15copy5 
+{ 
+     left: 742px; 
+     top: 224px; 
+     position: absolute; 
+     width: 139px;
+     height: 30px;
+     z-index:22;
+} 
+
+ #Rectangle15copy5_0 
+{ 
+     left: 742px; 
+     top: 270px; 
+     position: absolute; 
+     width: 139px;
+     height: 30px;
+     z-index:23;
+} 
+
+ #Rectangle15copy5_1 
+{ 
+     left: 742px; 
+     top: 373px; 
+     position: absolute; 
+     width: 139px;
+     height: 30px;
+     z-index:24;
+} 
+
+ #Rectangle14 
+{ 
+     left: 842px; 
+     top: 107px; 
+     position: absolute; 
+     width: 138px;
+     height: 45px;
+     z-index:25;
+} 
+
+ #ORDER 
+{ 
+     left: 861px; 
+     top: 122px; 
+     position: absolute; 
+     width: 99px;
+     height: 14px;
+     z-index:26;
+} 
+
+ #Qualifiedprofessnioa 
+{ 
+     left: 76px; 
+     top: 317px; 
+     position: absolute; 
+     width: 385px;
+     height: 16px;
+     z-index:27;
+} 
+
+ #247supporttoresolvey 
+{ 
+     left: 77px; 
+     top: 379px; 
+     position: absolute; 
+     width: 311px;
+     height: 16px;
+     z-index:28;
+} 
+
+ #TopRatedtutoringserv 
+{ 
+     left: 77px; 
+     top: 432px; 
+     position: absolute; 
+     width: 363px;
+     height: 31px;
+     z-index:29;
+} 
+
+ #Affordablepricingtog 
+{ 
+     left: 77px; 
+     top: 504px; 
+     position: absolute; 
+     width: 325px;
+     height: 33px;
+     z-index:30;
+} 
+
+ #Layer9 
+{ 
+     left: 17px; 
+     top: 498px; 
+     position: absolute; 
+     width: 42px;
+     height: 37px;
+     z-index:31;
+} 
+
+ #Layer6 
+{ 
+     left: 19px; 
+     top: 299px; 
+     position: absolute; 
+     width: 48px;
+     height: 45px;
+     z-index:32;
+} 
+
+ #Layer8 
+{ 
+     left: 15px; 
+     top: 428px; 
+     position: absolute; 
+     width: 52px;
+     height: 39px;
+     z-index:33;
+} 
+
+ #Layer7 
+{ 
+     left: 19px; 
+     top: 363px; 
+     position: absolute; 
+     width: 42px;
+     height: 42px;
+     z-index:34;
+} 
+
+ #LoremIpsumLoremLorem 
+{ 
+     left: 50px; 
+     top: 161px; 
+     position: absolute; 
+     width: 402px;
+     height: 89px;
+     z-index:35;
+} 
+
+ #Loremipsumdolorsitam 
+{ 
+     left: 126px; 
+     top: 4127px; 
+     position: absolute; 
+     width: 162px;
+     height: 277px;
+     z-index:36;
+} 
+
+ #Loremipsumdolorsitam_0 
+{ 
+     left: 328px; 
+     top: 4130px; 
+     position: absolute; 
+     width: 162px;
+     height: 277px;
+     z-index:37;
+} 
+
+ #Loremipsumdolorsitam_1 
+{ 
+     left: 527px; 
+     top: 4133px; 
+     position: absolute; 
+     width: 162px;
+     height: 226px;
+     z-index:38;
+} 
+
+ #Loremipsumdolorsitam_2 
+{ 
+     left: 748px; 
+     top: 4134px; 
+     position: absolute; 
+     width: 162px;
+     height: 295px;
+     z-index:39;
+} 
+
+ #Services 
+{ 
+     left: 127px; 
+     top: 4075px; 
+     position: absolute; 
+     width: 89px;
+     height: 20px;
+     z-index:40;
+} 
+
+ #Branch 
+{ 
+     left: 328px; 
+     top: 4076px; 
+     position: absolute; 
+     width: 89px;
+     height: 19px;
+     z-index:41;
+} 
+
+ #Features 
+{ 
+     left: 531px; 
+     top: 4075px; 
+     position: absolute; 
+     width: 111px;
+     height: 18px;
+     z-index:42;
+} 
+
+ #About 
+{ 
+     left: 745px; 
+     top: 4076px; 
+     position: absolute; 
+     width: 81px;
+     height: 19px;
+     z-index:43;
+} 
+
+ #Layer22 
+{ 
+     left: 878px; 
+     top: 4010px; 
+     position: absolute; 
+     width: 106px;
+     height: 28px;
+     z-index:44;
+} 
+
+ #Line16 
+{ 
+     left: -1px; 
+     top: 3939px; 
+     position: absolute; 
+     width: 1007px;
+     height: 5px;
+     z-index:45;
+} 
+
+ #Layer1copy 
+{ 
+     left: 10px; 
+     top: 3964px; 
+     position: absolute; 
+     width: 210px;
+     height: 61px;
+     z-index:46;
+} 
+
+ #WeAreofferingyou 
+{ 
+     left: 395px; 
+     top: 3668px; 
+     position: absolute; 
+     width: 252px;
+     height: 24px;
+     z-index:47;
+} 
+
+ #Rectangle19 
+{ 
+     left: 56px; 
+     top: 3713px; 
+     position: absolute; 
+     width: 202px;
+     height: 136px;
+     z-index:48;
+} 
+
+ #Rectangle19copy 
+{ 
+     left: 285px; 
+     top: 3713px; 
+     position: absolute; 
+     width: 202px;
+     height: 136px;
+     z-index:49;
+} 
+
+ #Rectangle19copy2 
+{ 
+     left: 508px; 
+     top: 3713px; 
+     position: absolute; 
+     width: 202px;
+     height: 136px;
+     z-index:50;
+} 
+
+ #Rectangle19copy3 
+{ 
+     left: 733px; 
+     top: 3713px; 
+     position: absolute; 
+     width: 202px;
+     height: 136px;
+     z-index:51;
+} 
+
+ #24X7CustomerSu 
+{ 
+     left: 85px; 
+     top: 3764px; 
+     position: absolute; 
+     width: 142px;
+     height: 34px;
+     z-index:52;
+} 
+
+ #SessionsWithExperts 
+{ 
+     left: 302px; 
+     top: 3784px; 
+     position: absolute; 
+     width: 168px;
+     height: 14px;
+     z-index:53;
+} 
+
+ #MoneyBackGuarantee 
+{ 
+     left: 521px; 
+     top: 3781px; 
+     position: absolute; 
+     width: 177px;
+     height: 14px;
+     z-index:54;
+} 
+
+ #QualityCheckWork 
+{ 
+     left: 758px; 
+     top: 3781px; 
+     position: absolute; 
+     width: 152px;
+     height: 14px;
+     z-index:55;
+} 
+
+ #Layer23 
+{ 
+     left: 58px; 
+     top: 2554px; 
+     position: absolute; 
+     width: 909px;
+     height: 338px;
+     z-index:56;
+} 
+
+ #Rectangle18 
+{ 
+     left: 46px; 
+     top: 799px; 
+     position: absolute; 
+     width: 922px;
+     height: 54px;
+     z-index:57;
+} 
+
+ #vcopy 
+{ 
+     left: 26px; 
+     top: 940px; 
+     position: absolute; 
+     width: 16px;
+     height: 9px;
+     z-index:58;
+} 
+
+ #vcopy2 
+{ 
+     left: 26px; 
+     top: 984px; 
+     position: absolute; 
+     width: 16px;
+     height: 9px;
+     z-index:59;
+} 
+
+ #vcopy3 
+{ 
+     left: 26px; 
+     top: 1032px; 
+     position: absolute; 
+     width: 16px;
+     height: 9px;
+     z-index:60;
+} 
+
+ #vcopy4 
+{ 
+     left: 44px; 
+     top: 1140px; 
+     position: absolute; 
+     width: 10px;
+     height: 16px;
+     z-index:61;
+} 
+
+ #OnlineNursingAssessm 
+{ 
+     left: 117px; 
+     top: 815px; 
+     position: absolute; 
+     width: 773px;
+     height: 24px;
+     z-index:62;
+} 
+
+ #BestNursingAssessmen 
+{ 
+     left: 214px; 
+     top: 872px; 
+     position: absolute; 
+     width: 584px;
+     height: 24px;
+     z-index:63;
+} 
+
+ #OurNursingAssessment 
+{ 
+     left: 67px; 
+     top: 934px; 
+     position: absolute; 
+     width: 913px;
+     height: 23px;
+     z-index:64;
+} 
+
+ #TopicsIllustratedByN 
+{ 
+     left: 67px; 
+     top: 980px; 
+     position: absolute; 
+     width: 789px;
+     height: 22px;
+     z-index:65;
+} 
+
+ #WhatDoesOurOnlineNur 
+{ 
+     left: 68px; 
+     top: 1028px; 
+     position: absolute; 
+     width: 623px;
+     height: 23px;
+     z-index:66;
+} 
+
+ #Itmightbechallenging 
+{ 
+     left: 56px; 
+     top: 2949px; 
+     position: absolute; 
+     width: 900px;
+     height: 664px;
+     z-index:67;
+} 
+
+ #Ellipse1 
+{ 
+     left: 19px; 
+     top: 3038px; 
+     position: absolute; 
+     width: 16px;
+     height: 17px;
+     z-index:68;
+} 
+
+ #Ellipse1copy 
+{ 
+     left: 19px; 
+     top: 3124px; 
+     position: absolute; 
+     width: 16px;
+     height: 17px;
+     z-index:69;
+} 
+
+ #Ellipse1copy2 
+{ 
+     left: 19px; 
+     top: 3211px; 
+     position: absolute; 
+     width: 16px;
+     height: 17px;
+     z-index:70;
+} 
+
+ #Ellipse1copy3 
+{ 
+     left: 19px; 
+     top: 3299px; 
+     position: absolute; 
+     width: 16px;
+     height: 17px;
+     z-index:71;
+} 
+
+ #Ellipse1copy4 
+{ 
+     left: 19px; 
+     top: 3386px; 
+     position: absolute; 
+     width: 16px;
+     height: 17px;
+     z-index:72;
+} 
+
+ #Ellipse1copy5 
+{ 
+     left: 19px; 
+     top: 3418px; 
+     position: absolute; 
+     width: 16px;
+     height: 17px;
+     z-index:73;
+} 
+
+ #Ellipse1copy6 
+{ 
+     left: 19px; 
+     top: 3472px; 
+     position: absolute; 
+     width: 16px;
+     height: 17px;
+     z-index:74;
+} 
+
+ #Ellipse1copy7 
+{ 
+     left: 19px; 
+     top: 3534px; 
+     position: absolute; 
+     width: 16px;
+     height: 17px;
+     z-index:75;
+} 
+
+ #Thebreadthofourbestn 
+{ 
+     left: 68px; 
+     top: 1773px; 
+     position: absolute; 
+     width: 912px;
+     height: 748px;
+     z-index:76;
+} 
+
+ #Asaknowledgeablesour 
+{ 
+     left: 67px; 
+     top: 1138px; 
+     position: absolute; 
+     width: 874px;
+     height: 460px;
+     z-index:77;
+} 
+
+ #Line17 
+{ 
+     left: 10px; 
+     top: 1146px; 
+     position: absolute; 
+     width: 39px;
+     height: 4px;
+     z-index:78;
+} 
+
+ #vcopy5 
+{ 
+     left: 44px; 
+     top: 1774px; 
+     position: absolute; 
+     width: 10px;
+     height: 16px;
+     z-index:79;
+} 
+
+ #Line17copy 
+{ 
+     left: 10px; 
+     top: 1780px; 
+     position: absolute; 
+     width: 39px;
+     height: 4px;
+     z-index:80;
+} 
+
+ #Rectangle21 
+{ 
+     left: -3px; 
+     top: 1622px; 
+     position: absolute; 
+     width: 1004px;
+     height: 124px;
+     z-index:81;
+} 
+
+ #OrderNow 
+{ 
+     left: 569px; 
+     top: 1671px; 
+     position: absolute; 
+     width: 167px;
+     height: 22px;
+     z-index:82;
+} 
+
+ #Rectangle20 
+{ 
+     left: 238px; 
+     top: 1653px; 
+     position: absolute; 
+     width: 223px;
+     height: 61px;
+     z-index:83;
+} 
+
+ #MegaOffer 
+{ 
+     left: 264px; 
+     top: 1672px; 
+     position: absolute; 
+     width: 168px;
+     height: 28px;
+     z-index:84;
+} 
+
+ #Rectangle20copy 
+{ 
+     left: 533px; 
+     top: 1650px; 
+     position: absolute; 
+     width: 227px;
+     height: 65px;
+     z-index:85;
+} 

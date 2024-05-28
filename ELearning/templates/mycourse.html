@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+My Course
+{% endblock title %}
+
+{% block content %}
+
+<div class="container">
+     <p class="display-6">My Courses </p>
+    <hr> 
+      <div class="row">
+    {% for uc in user_course %}
+    <div class="col">
+        <div class="card mx-auto" style="width: 18rem;">
+            <img src=" {{uc.course.course_image.url}}" class="card-img-top" alt="..." height=200>
+            <div class="card-body">
+                <h5 class="card-title">{{uc.course.name}}</h5>
+                <h5 class="card-title">{{uc.course.desc}}</h5>
+            </div>
+            <div class="card-footer p-4">
+                <div class="row no-gutters text-center">
+                    <div class="col border-right">
+                        <a href="course/{{uc.course.slug}}" class="btn btn-primary btn-block mystyle">Start Course</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {% endfor %}
+
+
+</div>
+</div>
+
+
+{% endblock content %}
